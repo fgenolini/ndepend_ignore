@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics.CodeAnalysis;
 
-[assembly: SuppressMessage("NDepend", "", Target = "LibA", Justification = "OK for minimal bug repro")]
+[assembly: SuppressMessage("NDepend", "", Justification = "OK for minimal bug repro")]
 namespace LibA
 {
     [SuppressMessage("NDepend", "ND2103:NamespaceNameShouldCorrespondToFileLocation", Justification = "not here")]
