@@ -14,4 +14,8 @@
     <DefineConstants>TRACE;CODE_ANALYSIS</DefineConstants>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Include="..\..\src\lib_b\Class1.cs" Link="Class1.cs" />
+  </ItemGroup>
+
 </Project>
