@@ -1,13 +1,16 @@
-﻿using System;
+﻿using System.Diagnostics.CodeAnalysis;
 
-[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("NDepend", "ND2800:MarkAssembliesWithAssemblyVersion", Justification = "false positive from NDepend, version set in project file")]
-namespace simple_console
+[assembly: SuppressMessage("NDepend", "ND2800:MarkAssembliesWithAssemblyVersion", Justification = "false positive from NDepend, version set in project file")]
+[assembly: SuppressMessage("NDepend", "ND1305:AvoidNamespacesWithFewTypes", Target = "SimpleConsole", Justification = "OK for minimal bug repro")]
+[assembly: SuppressMessage("NDepend", "ND2801:AssembliesShouldHaveTheSameVersion", Justification = "not here")]
+namespace SimpleConsole
 {
+    [SuppressMessage("NDepend", "ND2103:NamespaceNameShouldCorrespondToFileLocation", Justification = "not here")]
     sealed class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Hello World!");
+            LibA.Class1.SayHello();
         }
     }
 }

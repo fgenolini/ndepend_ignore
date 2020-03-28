@@ -13,10 +13,15 @@
     <FileVersion>1.0.1.2</FileVersion>
     <RepositoryUrl>https://github.com/fgenolini/ndepend_ignore</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
+    <RootNamespace>SimpleConsole</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DefineConstants>TRACE;CODE_ANALYSIS</DefineConstants>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\lib_a\lib_a.csproj" />
+  </ItemGroup>
 
 </Project>
