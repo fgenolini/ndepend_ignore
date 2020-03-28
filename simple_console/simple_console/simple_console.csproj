@@ -15,4 +15,8 @@
     <RepositoryType>GitHub</RepositoryType>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE;CODE_ANALYSIS</DefineConstants>
+  </PropertyGroup>
+
 </Project>
